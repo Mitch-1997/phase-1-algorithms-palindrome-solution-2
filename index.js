@@ -4,10 +4,10 @@ function isPalindrome(word) {
     let k = word.length-1-i;
     let lastChar = word[k];
     let startChar = word[i];
-    if(startChar !== lastChar){
-      return false;
-    } else {
+    if(startChar === lastChar){
       return true;
+    } else {
+      return false;
     }
   }
 }
